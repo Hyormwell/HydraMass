@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: hydra-reposter
+Version: 0.1.0
+Summary: Modular high‑load Telegram reposting engine (Hydra v7 refactor)
+Author: Hydra Reposter Lead Architect
+Requires-Python: >=3.11
+Requires-Dist: telethon>=1.37.1
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: rich>=13.7
+Requires-Dist: typer[all]>=0.12
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy==2.0.2
+Requires-Dist: loguru>=0.7
+Requires-Dist: python-socks[asyncio]>=2.4
+Provides-Extra: dev
+Requires-Dist: pytest>=8.1; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23; extra == "dev"
+Requires-Dist: pre-commit>=3.7; extra == "dev"
+Requires-Dist: ruff>=0.4; extra == "dev"
+Requires-Dist: black>=24.4; extra == "dev"
+Requires-Dist: isort>=5.13; extra == "dev"

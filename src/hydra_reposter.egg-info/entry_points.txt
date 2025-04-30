@@ -1,0 +1,2 @@
+[console_scripts]
+hydra-reposter = hydra_reposter.cli:app

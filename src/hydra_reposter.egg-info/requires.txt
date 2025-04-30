@@ -1,0 +1,16 @@
+telethon>=1.37.1
+python-dotenv>=1.0.0
+rich>=13.7
+typer[all]>=0.12
+pandas>=2.2
+numpy==2.0.2
+loguru>=0.7
+python-socks[asyncio]>=2.4
+
+[dev]
+pytest>=8.1
+pytest-asyncio>=0.23
+pre-commit>=3.7
+ruff>=0.4
+black>=24.4
+isort>=5.13

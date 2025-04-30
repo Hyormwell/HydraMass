@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydra-reposter"
+version = "0.1.0"
+description = "Modular high‑load Telegram reposting engine (Hydra v7 refactor)"
+authors = [{ name = "Hydra Reposter Lead Architect" }]
+requires-python = ">=3.11"
+dependencies = [
+    "telethon>=1.37.1",
+    "python-dotenv>=1.0.0",
+    "rich>=13.7",
+    "typer[all]>=0.12",
+    "pandas>=2.2",
+    "numpy==2.0.2",
+    "loguru>=0.7",
+    "python-socks[asyncio]>=2.4",
+]
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.1",
+    "pytest-asyncio>=0.23",
+    "pre-commit>=3.7",
+    "ruff>=0.4",
+    "black>=24.4",
+    "isort>=5.13",
+]
+[project.scripts]
+hydra-reposter = "hydra_reposter.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hydra_reposter*"]
+
